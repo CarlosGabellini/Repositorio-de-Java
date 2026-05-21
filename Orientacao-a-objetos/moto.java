@@ -6,6 +6,12 @@ public class moto {
     int ano_da_moto;
     double velocidadeMaxima;
 
+    //Variavel de classe, onde ela eh imutavel;
+
+    static String pais;                     //Usada pela palavra static;
+
+    //O usuario atribui isso na Main, exemplo: Moto.pais = "Japao";
+
     public moto (String cor, int ano_da_moto, double velocidadeMaxima) {
         this.cor = cor;
         this.ano_da_moto = ano_da_moto;
@@ -16,6 +22,7 @@ public class moto {
         System.out.printf("A moto tem a cor: %s\n", cor);
         System.out.printf("A moto eh do ano %d\n", ano_da_moto);
         System.out.printf("Velocidade maxima: %f\n", velocidadeMaxima);
+        System.out.printf("Pais de origem: %s\n", moto.pais);
     }
 
     public void acelerar() {
@@ -25,7 +32,4 @@ public class moto {
     public void frear() {
         System.out.printf("A moto esta freiando!\n");
     }
-
-    
-    
 }
